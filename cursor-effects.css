@@ -2,7 +2,9 @@
 
 /* Cyberpunk lens: decorative overlays never intercept the page's links. */
 .cyber-cursor-ui,
-.cyber-cursor-ui * { pointer-events: none !important; }
+.cyber-cursor-ui *,
+.cyber-touch-ui,
+.cyber-touch-ui * { pointer-events: none !important; }
 .cyber-cursor-ui { position: fixed; inset: 0; z-index: 2147483000; overflow: hidden; }
 .cyber-cursor-ui[hidden] { display: none !important; }
 .cyber-lens {
@@ -52,9 +54,40 @@
     border-radius: 50%;
     opacity: 0;
 }
-@media (hover: none), (pointer: coarse), print {
+.cyber-touch-ui {
+    position: fixed; inset: 0; z-index: 2147483001;
+    overflow: hidden;
+    --touch-ink: #147d89;
+}
+[data-theme="dark"] .cyber-touch-ui { --touch-ink: #70fff1; }
+.cyber-touch-ui[hidden] { display: none !important; }
+.cyber-fingerprint {
+    position: absolute; left: 0; top: 0;
+    width: 46px; height: 46px;
+    color: var(--touch-ink);
+    opacity: .52;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(68, 228, 226, .14), rgba(224, 70, 227, .04));
+    box-shadow: 0 0 12px rgba(32, 207, 210, .08);
+}
+.cyber-fingerprint svg { width: 40px; height: 40px; margin: 3px; display: block; }
+.cyber-fingerprint path {
+    fill: none; stroke: currentColor; stroke-width: 1.65;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+.cyber-touch-count { font-size: 9px; opacity: .82; padding: 3px 6px; }
+.cyber-touch-trail {
+    position: absolute;
+    width: 3px; border-radius: 6px;
+    transform-origin: bottom center;
+    background: linear-gradient(0deg, #24d7db, #e170d4, transparent);
+    box-shadow: 0 0 7px rgba(34, 205, 215, .18);
+    opacity: .2;
+}
+@media (hover: none), (pointer: coarse) {
     .cyber-cursor-ui { display: none !important; }
 }
+@media print { .cyber-cursor-ui, .cyber-touch-ui { display: none !important; } }
 @media (prefers-reduced-motion: reduce) {
-    .cyber-click-ripple { display: none !important; }
+    .cyber-click-ripple, .cyber-touch-trail { display: none !important; }
 }
