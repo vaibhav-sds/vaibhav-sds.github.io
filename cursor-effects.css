@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+/* Cyberpunk lens: decorative overlays never intercept the page's links. */
+.cyber-cursor-ui,
+.cyber-cursor-ui * { pointer-events: none !important; }
+.cyber-cursor-ui { position: fixed; inset: 0; z-index: 2147483000; overflow: hidden; }
+.cyber-cursor-ui[hidden] { display: none !important; }
+.cyber-lens {
+    position: absolute;
+    left: 0; top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(135deg, rgba(0, 235, 255, .13), rgba(255, 0, 145, .17));
+    outline: 1px solid rgba(75, 255, 242, .8);
+    box-shadow: 0 0 17px rgba(0, 229, 255, .2), inset 0 0 22px rgba(231, 0, 255, .18);
+    -webkit-backdrop-filter: hue-rotate(155deg) saturate(2.8) contrast(1.2);
+    backdrop-filter: hue-rotate(155deg) saturate(2.8) contrast(1.2);
+}
+.cyber-lens::after {
+    content: '';
+    position: absolute; inset: 0;
+    border-radius: inherit;
+    background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(4, 8, 26, .13) 3px 4px);
+    box-shadow: inset 0 0 0 5px rgba(2, 8, 24, .08);
+}
+.cyber-lens svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.cyber-lens text {
+    font-family: 'Orbitron', 'Courier New', monospace;
+    font-style: normal;
+    fill: #8cfff1;
+    text-shadow: 1px 0 #e600a9, 0 0 5px rgba(0, 255, 239, .65);
+}
+.cyber-click-count {
+    position: absolute;
+    left: 0; top: 0;
+    color: #93fff5;
+    background: rgba(5, 10, 25, .9);
+    border: 1px solid rgba(86, 255, 238, .65);
+    border-radius: 5px;
+    padding: 4px 7px;
+    font: 10px/1.4 'Orbitron', 'Courier New', monospace;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .2);
+}
+.cyber-click-ripple {
+    position: absolute;
+    left: 0; top: 0;
+    width: 24px; height: 24px;
+    border: 1px solid #f45dff;
+    border-radius: 50%;
+    opacity: 0;
+}
+@media (hover: none), (pointer: coarse), print {
+    .cyber-cursor-ui { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .cyber-click-ripple { display: none !important; }
+}
