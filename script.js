@@ -56,3 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+(() => {
+    if (document.querySelector('script[data-cursor-effects]')) return;
+
+    const base = document.currentScript
+        ? document.currentScript.src
+        : document.baseURI;
+
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = new URL('cursor-effects.css', base).href;
+
+    const js = document.createElement('script');
+    js.src = new URL('cursor-effects.js', base).href;
+    js.dataset.cursorEffects = 'true';
+
+    document.head.append(css);
+    document.body.append(js);
+})();
