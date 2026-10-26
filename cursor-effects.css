@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
+/* The explanation remains readable in both themes and on touch screens. */
+.cursor-effects-note {
+    max-width: 72ch;
+    margin: 16px auto 0;
+    font-size: .8rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary, inherit);
+}
+.cursor-effects-note a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.cursor-effects-note a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 /* Cyberpunk lens: decorative overlays never intercept the page's links. */
 .cyber-cursor-ui,
 .cyber-cursor-ui *,

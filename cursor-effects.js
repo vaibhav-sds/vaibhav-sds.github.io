@@ -10,6 +10,18 @@
 
     function init() {
         if (document.querySelector('.cyber-cursor-ui')) return;
+        // Shared footer note: visible wherever the visual effects are loaded.
+        const footer = document.querySelector('footer');
+        if (footer && !footer.querySelector('.cursor-effects-note')) {
+            const note = document.createElement('p');
+            note.className = 'cursor-effects-note';
+            note.append('The "human behaviour" and "mobile tracking" effects are only for fun as it relates to my research :) These visual effects send NO interaction data to me WHATSOEVER. The counter and last touch marker uses a temporary local tab storage. You can also check the Git Repo: ');
+            const sourceLink = document.createElement('a');
+            sourceLink.href = 'https://github.com/vaibhav-sds/vaibhav-sds.github.io';
+            sourceLink.textContent = 'View the code on GitHub';
+            note.append(sourceLink, '.');
+            footer.append(note);
+        }
         const ui = document.createElement('div');
         ui.className = 'cyber-cursor-ui';
         ui.setAttribute('aria-hidden', 'true');
