@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Vaibhav Agarwal</title>
+    <meta name="description" content="Academic and professional background of Vaibhav Agarwal.">
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ══════ NAVIGATION ══════ -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-name">VA</a>
+            <div class="nav-right">
+                <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ══════ CV ══════ -->
+        <section id="cv">
+            <h2 class="section-heading">Curriculum Vitae</h2>
+            <p class="section-subtitle">My academic and professional journey so far.</p>
+            <div class="cv-columns">
+
+                <!-- Education group -->
+                <div class="cv-group">
+                    <div class="cv-category-label">Education</div>
+                    <div class="cv-entries">
+
+                        <!-- TUM -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper">
+                                <img src="images/tum-logo.jpg" alt="TUM logo">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Doctoral Researcher</h4>
+                                        <div class="cv-place">Technical University of Munich · AGAPP-TUS7AGP</div>
+                                        <div class="cv-location">Munich, Germany</div>
+                                        <div class="cv-date">Sep 2025 — Present</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>First-year PhD researcher at the School of Social Sciences and Technology.</p>
+                                    <ul>
+                                        <li>Researching algorithmic governance, digitalisation, and public policy</li>
+                                        <li>Utilizing conjoint experiments and computational methodology</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Helsinki -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper">
+                                <img src="images/helsinki-logo.jpg" alt="University of Helsinki logo">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Master's in Contemporary Societies</h4>
+                                        <div class="cv-place">University of Helsinki</div>
+                                        <div class="cv-location">Helsinki, Finland</div>
+                                        <div class="cv-date">Aug 2023 — Jun 2025</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Specialised in the Social Data Science Track.</p>
+                                    <ul>
+                                        <li>Master's thesis evaluated algorithmic systems in public governance using conjoint analysis</li>
+                                        <li>Board Member of the International Committee (HYY) advocating for international student rights</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Azim Premji -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper logo-nudge-up">
+                                <img src="images/azim-premji-logo.jpg" alt="Azim Premji University logo">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Bachelor of Arts in Economics</h4>
+                                        <div class="cv-place">Azim Premji University</div>
+                                        <div class="cv-location">Bangalore, India</div>
+                                        <div class="cv-date">Jul 2020 — May 2023</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Completed undergraduate degree with a GPA of 8.1/10.</p>
+                                    <ul>
+                                        <li>Minor in Data, Democracy, and Development Economics</li>
+                                        <li>Presented research on renewable energy project investments at the Student Research Conclave</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Experience group -->
+                <div class="cv-group">
+                    <div class="cv-category-label">Experience</div>
+                    <div class="cv-entries">
+
+                        <!-- Helsinki RA -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper logo-padded">
+                                <img src="images/helsinki-logo.jpg" alt="University of Helsinki">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Research Assistant</h4>
+                                        <div class="cv-place">University of Helsinki · Faculty of Social Sciences</div>
+                                        <div class="cv-location">Helsinki, Finland</div>
+                                        <div class="cv-date">Jan 2024 — Jul 2025</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Assisted on the AGAPP and HEPP projects focusing on conjoint analysis and multimodal data.</p>
+                                    <ul>
+                                        <li>Managed 3 TB of data using Puhti and Allas servers</li>
+                                        <li>Conducted video/auditory analysis using OpenCV and Whisper</li>
+                                        <li>Set up models for AMCE/MM estimation for conjoint experiments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Helsinki TA -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper">
+                                <img src="images/helsinki-logo.jpg" alt="University of Helsinki">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Teaching Assistant</h4>
+                                        <div class="cv-place">University of Helsinki</div>
+                                        <div class="cv-location">Helsinki, Finland</div>
+                                        <div class="cv-date">Sep 2024 — Oct 2024</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Teaching Assistant for the Quantitative Research Skills course.</p>
+                                    <ul>
+                                        <li>Supported students with R programming methodology</li>
+                                        <li>Mentored students on factor analysis and regression techniques</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Azim Premji RA/TA -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper logo-padded">
+                                <img src="images/azim-premji-logo.jpg" alt="Azim Premji">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Research & Teaching Assistant</h4>
+                                        <div class="cv-place">Azim Premji University</div>
+                                        <div class="cv-location">Bangalore, India</div>
+                                        <div class="cv-date">Mar 2023 — Oct 2023</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Dual roles encompassing data infrastructure research and inclusive pedagogical teaching.</p>
+                                    <ul>
+                                        <li>Estimated care infrastructure in India via web-scraping and data analysis</li>
+                                        <li>Pioneered a 4-day Statistics and R Workshop for visually impaired participants</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SSAAT Intern -->
+                        <div class="cv-item collapsible">
+                            <div class="cv-logo-wrapper">
+                                <img src="images/ssaat-logo.jpg" alt="SSAAT">
+                            </div>
+                            <div class="cv-main">
+                                <div class="cv-summary">
+                                    <div class="cv-details">
+                                        <h4>Social Audit Intern</h4>
+                                        <div class="cv-place">SSAAT Telangana</div>
+                                        <div class="cv-location">Telangana, India</div>
+                                        <div class="cv-date">May 2022 — Jun 2022</div>
+                                    </div>
+                                    <button class="cv-toggle" type="button" aria-label="Toggle details">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cv-extra">
+                                    <p>Worked on grassroots auditing and transparency initiatives.</p>
+                                    <ul>
+                                        <li>Facilitated MGNREGA scheme social audits across multiple villages</li>
+                                        <li>Campaigned to spread awareness regarding worker rights</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Download CV Button -->
+            <div class="cv-download">
+                <a href="cv.pdf" class="btn" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Full CV
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══════ FOOTER ══════ -->
+    <footer>
+        <p>&copy; 2026 Vaibhav Agarwal · Doctoral Researcher · <a href="https://www.tum.de/" target="_blank">Technical University of Munich</a></p>
+        <p style="margin-top: 4px;">All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master's Thesis | Vaibhav Agarwal</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-name">VA</a>
+            <div class="nav-right">
+                <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="subpage-header">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="research.html#projects">Research</a> / Master's Thesis
+            </div>
+            <h1>Evaluation of Algorithmic Systems in Public Governance</h1>
+            <p class="subpage-quote">Testing Methodological Cohesion in Conjoint Analysis.</p>
+        </div>
+
+        <div class="subpage-body">
+            
+            <div class="method-groups">
+                <div class="method-group">
+                    <div class="method-group-title">Tools & Methods</div>
+                    <div class="project-tools">
+                        <span>Conjoint Experiments</span>
+                        <span>R</span>
+                        <span>Latent Class Analysis</span>
+                        <span>Marginal Means (MM)</span>
+                        <span>AMCE</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                As part of my Master's in Social Data Science at the University of Helsinki, I focused on examining public perceptions of algorithmic decision-making (ADM) systems. The core objective was to understand what drives public trust and legitimacy when governance shifts from human-led to algorithm-assisted frameworks.
+            </p>
+
+            <p>
+                A significant portion of my research was dedicated to exploring how conjoint experiments can reveal nuanced patterns in human decision-making. By setting up complex models, I compared standard estimation methods against latent class analysis to investigate attribute non-attendance.
+            </p>
+
+            <p>
+                <strong>Key Contributions:</strong><br>
+                • Designed frameworks to test public trust in ADM.<br>
+                • Applied cognitive modeling to understand heuristic decision-making.<br>
+                • Processed and cleaned large-scale survey data to run AMCE and MM estimations.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vaibhav Agarwal · Doctoral Researcher · <a href="https://www.tum.de/" target="_blank">Technical University of Munich</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
