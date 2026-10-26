@@ -6,14 +6,12 @@ function toggleTheme() {
     localStorage.setItem('theme', next);
 }
 
-// Restore saved theme or follow system preference
 (function () {
     const saved = localStorage.getItem('theme');
-    if (saved) {
-        document.documentElement.setAttribute('data-theme', saved);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    document.documentElement.setAttribute(
+        'data-theme',
+        saved === 'dark' ? 'dark' : 'light'
+    );
 })();
 
 // Close mobile menu on link click + close email dropdown on outside click
